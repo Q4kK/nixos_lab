@@ -1,0 +1,20 @@
+theme = "autumn_night"
+
+[editor]
+mouse = false
+auto-completion = true
+completion-trigger-len = 1
+completion-replace = true
+auto-info = true
+auto-format = true
+
+[editor.cursor-shape]
+insert = "bar"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = false
+
+[editor.file-picker]
+hidden = false
