@@ -7,6 +7,7 @@
       ../nixoshomeconfigs/packages/bash.nix
       ../nixoshomeconfigs/packages/git.nix
       ../nixoshomeconfigs/packages/fish.nix
+      ../nixoshomeconfigs/packages/neovim.nix
       # ./simple_runner.nix
     ];
 
@@ -86,13 +87,12 @@
         isNormalUser = true;
         description = "Zenith";
         extraGroups = [ "networkmanager" "wheel"];
-        packages = with pkgs; [];
+        packages = with pkgs; [ home-manager];
       };
   };
 
 
   environment.systemPackages = with pkgs; [ripgrep nmap nixd python310 firefox discord];
-
   # started in user sessions.
   # programs.mtr.enable = true;
   # programs.gnupg.agent = {
