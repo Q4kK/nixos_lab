@@ -21,7 +21,6 @@
     };
   in [
     custom-helix
-    pkgs.neovim
   ];
   environment.etc."helix/config.toml".source = ../dotfiles/helix/config.toml;
 }

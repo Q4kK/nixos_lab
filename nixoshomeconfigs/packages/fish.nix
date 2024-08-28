@@ -1,7 +1,7 @@
 {
   programs.fish = {
     enable = true;
-    shellAliases = {
+    shellAbbrs = {
       ip = "ip a -color=always";
 
       #fancy git commands lmao
@@ -10,6 +10,7 @@
 
       # tea stuff
       "tea pr merge" = "tea pr merge --style='rebase'";
+      nixdev = "nix develop -c fish";
     };
   };
 }

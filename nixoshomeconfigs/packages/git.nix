@@ -9,7 +9,7 @@
           name = "q4kK";
           email = "quantumstar4k@gmail.com";
         };
-        core.editor = "hx";
+        core.editor = "vim";
         commit.verbose = true;
         push.autoSetupRemote = true;
         pull.rebase = true;
