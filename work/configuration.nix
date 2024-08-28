@@ -70,15 +70,7 @@ networking.defaultGateway = "10.168.44.1";
 networking.nameservers = ["199.17.166.187" "199.17.166.186"];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users = {
-    samba = {
-      isNormalUser = true;
-      description = "samba";
-    };
-  };
-
-
-  environment.systemPackages = with pkgs; [tea ripgrep nmap nixd python310 firefox yaml-language-server ansible-language-server];
+environment.systemPackages = with pkgs; [tea ripgrep nmap nixd python310 firefox yaml-language-server ansible-language-server];
 
   # started in user sessions.
   # programs.mtr.enable = true;

@@ -14,4 +14,13 @@
       };
     };
   };
+
+  users.users = {
+	  samba = {
+		  isNormalUser = true;
+		  description = "samba";
+    };
+  };
+
+
 }
